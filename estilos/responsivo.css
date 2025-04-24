@@ -1,63 +1,131 @@
-/* Estilos gerais para dispositivos móveis */
+/* responsivo.css */
+
+/* Estilos gerais */
 body {
-    font-size: 16px; /* Tamanho de fonte padrão */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header h1 {
-    font-size: 1.5em; /* Tamanho de fonte do título */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: blueviolet;
 }
 
-header p {
-    font-size: 1em; /* Tamanho de fonte do parágrafo */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens do menu na horizontal */
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Efeito hover */
 }
 
 main {
-    padding: 10px; /* Reduz o padding em dispositivos móveis */
+    padding: 20px;
 }
 
-form {
-    padding: 35px; /* Reduz o padding do formulário */
-}
-
-/* Media Queries */
+/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.3em; /* Tamanho de fonte do título em telas menores */
+    body {
+        font-size: 14px; /* Tamanho de fonte menor para dispositivos móveis */
     }
 
-    header p {
-        font-size: 0.9em; /* Tamanho de fonte do parágrafo em telas menores */
+    header {
+        padding: 15px;
     }
 
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta a galeria para telas menores */
+    nav ul {
+        display: block; /* Exibe os itens do menu em bloco */
+        text-align: center; /* Centraliza os itens do menu */
     }
 
-    .form-group {
-        margin-bottom: 10px; /* Reduz o espaçamento entre os campos do formulário */
+    nav ul li {
+        display: block; /* Cada item do menu ocupa uma linha */
+        margin: 10px 0; /* Margem vertical entre os itens */
     }
 
-    button {
-        padding: 8px 12px; /* Ajusta o padding do botão */
+    main {
+        padding: 10px; /* Reduz o padding no main */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamanho de fonte menor para o título */
+    }
+
+    h2 {
+        font-size: 20px; /* Tamanho de fonte menor para subtítulos */
+    }
+
+    p {
+        line-height: 1.5; /* Aumenta o espaçamento entre linhas */
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em; /* Tamanho de fonte do título em telas muito pequenas */
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Tamanho de fonte padrão para tablets */
     }
 
-    header p {
-        font-size: 0.8em; /* Tamanho de fonte do parágrafo em telas muito pequenas */
+    nav ul li {
+        display: inline; /* Exibe os itens do menu na horizontal */
+        margin-right: 15px; /* Margem entre os itens */
     }
 
-    form {
-        padding: 10px; /* Reduz ainda mais o padding do formulário */
+    main {
+        padding: 20px; /* Padding padrão para tablets */
     }
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        padding: 8px; /* Ajusta o padding dos campos de entrada */
+    h1 {
+        font-size: 28px; /* Tamanho de fonte para o título */
+    }
+
+    h2 {
+        font-size: 24px; /* Tamanho de fonte para subtítulos */
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px; /* Tamanho de fonte maior para desktops */
+    }
+
+    header {
+        padding: 30px; /* Padding maior para desktops */
+    }
+
+    nav ul li {
+        display: inline; /* Exibe os itens do menu na horizontal */
+        margin-right: 20px; /* Margem entre os itens */
+    }
+
+    main {
+        padding: 40px; /* Padding maior para desktops */
+    }
+
+    h1 {
+        font-size: 32px; /* Tamanho de fonte para o título */
+    }
+
+    h2 {
+        font-size: 28px; /* Tamanho de fonte para subtítulos */
     }
 }
