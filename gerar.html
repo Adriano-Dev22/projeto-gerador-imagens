@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Imagens</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsivo.css"> 
+
+</head>
+<body>
+    <header>
+        <h1>Gerador de Imagens por IA</h1>
+        <p>Descreva sua imagem e deixe a IA criar para você!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Crie sua Imagem</h2>
+            <form id="imageForm">
+                <label for="description">Descrição da Imagem:</label>
+                <input type="text" id="description" name="description" required>
+
+                <label for="style">Estilo da Imagem:</label>
+                <select id="style" name="style">
+                    <option value="realista">Realista</option>
+                    <option value="abstrato">Abstrato</option>
+                    <option value="cartoon">Cartoon</option>
+                    <option value="anime">Anime</option>
+                </select>
+
+                <button type="submit">Gerar Imagem</button>
+            </form>
+            <div id="loading" class="hidden">Gerando sua imagem, por favor aguarde...</div>
+            <div id="result" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gerador de Imagens por IA.</p>
+    </footer>
+
+    <script src="scripts/"></script>
+</body>
+</html>

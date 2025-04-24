@@ -1,0 +1,63 @@
+/* Estilos gerais para dispositivos móveis */
+body {
+    font-size: 16px; /* Tamanho de fonte padrão */
+}
+
+header h1 {
+    font-size: 1.5em; /* Tamanho de fonte do título */
+}
+
+header p {
+    font-size: 1em; /* Tamanho de fonte do parágrafo */
+}
+
+main {
+    padding: 10px; /* Reduz o padding em dispositivos móveis */
+}
+
+form {
+    padding: 35px; /* Reduz o padding do formulário */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.3em; /* Tamanho de fonte do título em telas menores */
+    }
+
+    header p {
+        font-size: 0.9em; /* Tamanho de fonte do parágrafo em telas menores */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta a galeria para telas menores */
+    }
+
+    .form-group {
+        margin-bottom: 10px; /* Reduz o espaçamento entre os campos do formulário */
+    }
+
+    button {
+        padding: 8px 12px; /* Ajusta o padding do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em; /* Tamanho de fonte do título em telas muito pequenas */
+    }
+
+    header p {
+        font-size: 0.8em; /* Tamanho de fonte do parágrafo em telas muito pequenas */
+    }
+
+    form {
+        padding: 10px; /* Reduz ainda mais o padding do formulário */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 8px; /* Ajusta o padding dos campos de entrada */
+    }
+}
