@@ -125,6 +125,7 @@ Claudemir Adriano de Albuquerque Silva
 Aluno da CESAR School, apaixonado por tecnologia, IA e inovação.
 📚 Focado em criar soluções criativas que unem arte e inteligência artificial.
 
-🔗 LinkedIn: seulinkedin.com/in/claudemiradriano
+🔗 LinkedIn: www.linkedin.com/in/claudemir-adriano-de-albuquerque-silva-a0576a368
 
-🔗 GitHub: github.com/claudemiradriano
+
+🔗 GitHub: https://github.com/Adriano-Dev22
