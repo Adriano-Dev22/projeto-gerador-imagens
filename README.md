@@ -1,3 +1,5 @@
+Projeto Gerador de imagens - IA
+
 Um gerador de imagens inteligente que transforma textos em imagens realistas e criativas usando modelos de inteligência artificial.
 Inspirado em plataformas como Leonardo AI e Midjourney, o sistema permite que o usuário descreva o que deseja ver — e a IA cria a imagem automaticamente.
 
